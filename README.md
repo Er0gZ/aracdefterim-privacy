@@ -2,10 +2,10 @@
 Son Güncelleme: 18.11.2025
 
 1. Giriş
-Araç Defterim uygulaması olarak, kullanıcılarımızın gizliliğini ve veri güvenliğini önemsiyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken topladığımız bilgileri, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklar.
+• Araç Defterim uygulaması olarak, kullanıcılarımızın gizliliğini ve veri güvenliğini önemsiyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken topladığımız bilgileri, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklar.
 
 2. Toplanan Veriler
-Uygulamamızı kullanırken aşağıdaki verileri topluyoruz:
+• Uygulamamızı kullanırken aşağıdaki verileri topluyoruz:
 
 • Araç Bilgileri: Marka, model, yıl, plaka, VIN numarası, renk, kilometre bilgisi
 
