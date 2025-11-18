@@ -1,143 +1,84 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Araç Defterim — Gizlilik Politikası</title>
-    <meta name="description" content="Araç Defterim gizlilik politikası: hangi verileri topluyoruz, nasıl kullanıyoruz ve nasıl koruyoruz." />
-    <meta name="theme-color" content="#0d1117" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/dark-veil.css" />
-    
-    <style>
-        /* Sayfa odaklı küçük düzenlemeler */
-        .app-main { background: transparent !important; }
-        .policy-container { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-        .policy-header { padding: 2rem 0 1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); }
-        .policy-title-row { display:flex; align-items:center; gap:.6rem; }
-        .policy-header h1 { margin: 0; font-size: 2.1rem; }
-        .last-updated { color: var(--text-soft); font-size: 1rem; }
-        .policy-section { margin-top: 1.9rem; }
-        .policy-section h2 { font-size: 1.3rem; margin: 0 0 .6rem; color: var(--accent); }
-        .policy-section p { margin: 0; line-height: 1.8; color: var(--text); font-size: 1.05rem; }
-        .bullet { margin: .35rem 0; }
-        .muted { color: var(--text-soft); }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Araç Defterim — Gizlilik Politikası</title>
+  <meta name="description" content="Araç Defterim gizlilik politikası" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family: 'Inter', system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,sans-serif; line-height:1.7; color:#1d1c14; background:#ffffff; }
+    .container { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    h1 { margin:0 0 .5rem; font-size: 2rem; }
+    .last { color:#666; font-size:.95rem; margin-bottom:1rem; }
+    h2 { margin:1.6rem 0 .5rem; font-size:1.2rem; color:#6f5d0d; }
+    p { margin:.25rem 0; font-size:1.03rem; }
+    .bullet { margin:.3rem 0; }
+    a { color:#6f5d0d; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Gizlilik Politikası</h1>
+        <div class="last">Son Güncelleme: 18.11.2025</div>
 
-        /* Icon toggle next to title */
-        .icon-btn { display:inline-grid; place-items:center; width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--bg-alt); color:var(--text); cursor:pointer; transition:background var(--transition), transform var(--transition); }
-        .icon-btn:hover { background:var(--bg-soft); transform:translateY(-1px); }
-        .icon-btn:focus-visible { outline:none; box-shadow:var(--focus-ring); }
-        .icon-sun { display:inline; }
-        body.dark-mode .icon-sun { display:none; }
-        .icon-moon { display:none; }
-        body.dark-mode .icon-moon { display:inline; }
-    </style>
-</head>
-<body>
-    <div class="bg-dark-veil" data-dark-veil aria-hidden="true"></div>
-    <main class="app-main" tabindex="-1">
-        <div class="policy-container">
-            <header class="policy-header">
-                <div class="policy-title-row">
-                    <h1>Gizlilik Politikası</h1>
-                    <button id="darkmode-toggle" class="icon-btn" aria-label="Tema değiştir" title="Tema değiştir">
-                        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <circle cx="12" cy="12" r="4"/>
-                            <g stroke-linecap="round">
-                                <line x1="12" y1="2" x2="12" y2="5"/>
-                                <line x1="12" y1="19" x2="12" y2="22"/>
-                                <line x1="2" y1="12" x2="5" y2="12"/>
-                                <line x1="19" y1="12" x2="22" y2="12"/>
-                                <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
-                                <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
-                                <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
-                                <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
-                            </g>
-                        </svg>
-                        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                            <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3a7 7 0 1 0 9.5 9.5z"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="last-updated">Son Güncelleme: 18.11.2025</div>
-            </header>
+        <h2>1. Giriş</h2>
+        <p>Araç Defterim uygulaması olarak, kullanıcılarımızın gizliliğini ve veri güvenliğini önemsiyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken topladığımız bilgileri, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklar.</p>
 
-            <section class="policy-section">
-                <h2>1. Giriş</h2>
-                <p>Araç Defterim uygulaması olarak, kullanıcılarımızın gizliliğini ve veri güvenliğini önemsiyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken topladığımız bilgileri, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklar.</p>
-            </section>
+        <h2>2. Toplanan Veriler</h2>
+        <p>Uygulamamızı kullanırken aşağıdaki verileri topluyoruz:</p>
+        <p class="bullet">• Araç Bilgileri: Marka, model, yıl, plaka, VIN numarası, renk, kilometre bilgisi</p>
+        <p class="bullet">• Bakım Kayıtları: Bakım türü, tarih, kilometre, maliyet, fotoğraflar</p>
+        <p class="bullet">• Yakıt Kayıtları: Yakıt türü, litre, tutar, tarih, kilometre, verimlilik verileri</p>
+        <p class="bullet">• Kullanıcı Bilgileri: Google hesabı bilgileri (e‑posta, isim, profil fotoğrafı)</p>
+        <p class="bullet">• Cihaz Bilgileri: Cihaz modeli, işletim sistemi versiyonu (hata ayıklama için)</p>
 
-            <section class="policy-section">
-                <h2>2. Toplanan Veriler</h2>
-                <p>Uygulamamızı kullanırken aşağıdaki verileri topluyoruz:</p>
-                <p class="bullet">• Araç Bilgileri: Marka, model, yıl, plaka, VIN numarası, renk, kilometre bilgisi</p>
-                <p class="bullet">• Bakım Kayıtları: Bakım türü, tarih, kilometre, maliyet, fotoğraflar</p>
-                <p class="bullet">• Yakıt Kayıtları: Yakıt türü, litre, tutar, tarih, kilometre, verimlilik verileri</p>
-                <p class="bullet">• Kullanıcı Bilgileri: Google hesabı bilgileri (e‑posta, isim, profil fotoğrafı)</p>
-                <p class="bullet">• Cihaz Bilgileri: Cihaz modeli, işletim sistemi versiyonu (hata ayıklama için)</p>
-            </section>
+        <h2>3. Veri Kullanım Amaçları</h2>
+        <p>Topladığımız verileri aşağıdaki amaçlar için kullanıyoruz:</p>
+        <p class="bullet">• Uygulama işlevselliğini sağlamak (araç takibi, bakım hatırlatmaları, yakıt analizi)</p>
+        <p class="bullet">• Kullanıcı deneyimini iyileştirmek</p>
+        <p class="bullet">• Verilerinizi cihazlarınız arasında senkronize etmek</p>
+        <p class="bullet">• Güvenlik ve hata ayıklama</p>
+        <p class="bullet">• Yasal yükümlülükleri yerine getirmek</p>
 
-            <section class="policy-section">
-                <h2>3. Veri Kullanım Amaçları</h2>
-                <p>Topladığımız verileri aşağıdaki amaçlar için kullanıyoruz:</p>
-                <p class="bullet">• Uygulama işlevselliğini sağlamak (araç takibi, bakım hatırlatmaları, yakıt analizi)</p>
-                <p class="bullet">• Kullanıcı deneyimini iyileştirmek</p>
-                <p class="bullet">• Verilerinizi cihazlarınız arasında senkronize etmek</p>
-                <p class="bullet">• Güvenlik ve hata ayıklama</p>
-                <p class="bullet">• Yasal yükümlülükleri yerine getirmek</p>
-            </section>
+        <h2>4. Veri Saklama ve Güvenlik</h2>
+        <p>Verileriniz aşağıdaki şekillerde saklanır:</p>
+        <p class="bullet">• Firebase Firestore: Bulut tabanlı veritabanında güvenli şekilde saklanır</p>
+        <p class="bullet">• SQLite: Cihazınızda offline erişim için yerel veritabanında saklanır</p>
+        <p class="bullet">• Şifreleme: Hassas veriler şifrelenmiş olarak saklanır</p>
+        <p class="bullet">• Güvenli Bağlantı: Tüm veri aktarımları HTTPS üzerinden yapılır</p>
+        <p class="bullet">• Kullanıcı İzolasyonu: Her kullanıcının verileri birbirinden ayrı tutulur</p>
+        <p class="bullet" style="color:#666;">Hesabınızı sildiğinizde veya veri silme talebinde bulunduğunuzda, verileriniz güvenli bir şekilde kalıcı olarak silinir.</p>
 
-            <section class="policy-section">
-                <h2>4. Veri Saklama ve Güvenlik</h2>
-                <p>Verileriniz aşağıdaki şekillerde saklanır:</p>
-                <p class="bullet">• Firebase Firestore: Bulut tabanlı veritabanında güvenli şekilde saklanır</p>
-                <p class="bullet">• SQLite: Cihazınızda offline erişim için yerel veritabanında saklanır</p>
-                <p class="bullet">• Şifreleme: Hassas veriler şifrelenmiş olarak saklanır</p>
-                <p class="bullet">• Güvenli Bağlantı: Tüm veri aktarımları HTTPS üzerinden yapılır</p>
-                <p class="bullet">• Kullanıcı İzolasyonu: Her kullanıcının verileri birbirinden ayrı tutulur</p>
-                <p class="muted" style="margin-top:.6rem;">Hesabınızı sildiğinizde veya veri silme talebinde bulunduğunuzda, verileriniz güvenli bir şekilde kalıcı olarak silinir.</p>
-            </section>
+        <h2>5. Kullanıcı Hakları</h2>
+        <p>KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
+        <p class="bullet">• Verilerinize Erişim: Toplanan tüm verilerinize erişebilirsiniz</p>
+        <p class="bullet">• Veri Düzeltme: Yanlış veya eksik verileri düzeltebilirsiniz</p>
+        <p class="bullet">• Veri Silme: Tüm verilerinizi silebilirsiniz (Profil &gt; Verileri Sil)</p>
+        <p class="bullet">• Hesap Silme: Hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz (Profil &gt; Hesabı Sil)</p>
+        <p class="bullet">• Veri Taşınabilirliği: PDF raporu olarak verilerinizi dışa aktarabilirsiniz (Profil &gt; PDF Raporu)</p>
+        <p class="bullet">• İtiraz Hakkı: Veri işleme faaliyetlerimize itiraz edebilirsiniz</p>
 
-            <section class="policy-section">
-                <h2>5. Kullanıcı Hakları</h2>
-                <p>KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
-                <p class="bullet">• Verilerinize Erişim: Toplanan tüm verilerinize erişebilirsiniz</p>
-                <p class="bullet">• Veri Düzeltme: Yanlış veya eksik verileri düzeltebilirsiniz</p>
-                <p class="bullet">• Veri Silme: Tüm verilerinizi silebilirsiniz (Profil &gt; Verileri Sil)</p>
-                <p class="bullet">• Hesap Silme: Hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz (Profil &gt; Hesabı Sil)</p>
-                <p class="bullet">• Veri Taşınabilirliği: PDF raporu olarak verilerinizi dışa aktarabilirsiniz (Profil &gt; PDF Raporu)</p>
-                <p class="bullet">• İtiraz Hakkı: Veri işleme faaliyetlerimize itiraz edebilirsiniz</p>
-            </section>
+        <h2>6. Üçüncü Taraf Servisler</h2>
+        <p>Uygulamamız aşağıdaki üçüncü taraf servisleri kullanır:</p>
+        <p class="bullet">• Google Sign‑In: Kimlik doğrulama için Google hesabınızı kullanırız</p>
+        <p class="bullet">• Firebase: Veri saklama, kimlik doğrulama ve bulut senkronizasyonu için Google Firebase kullanırız</p>
+        <p class="bullet">• Google ML Kit: OCR (fiş okuma) özelliği için kullanılır</p>
+        <p class="bullet" style="color:#666;">Google Gizlilik Politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
 
-            <section class="policy-section">
-                <h2>6. Üçüncü Taraf Servisler</h2>
-                <p>Uygulamamız aşağıdaki üçüncü taraf servisleri kullanır:</p>
-                <p class="bullet">• Google Sign‑In: Kimlik doğrulama için Google hesabınızı kullanırız</p>
-                <p class="bullet">• Firebase: Veri saklama, kimlik doğrulama ve bulut senkronizasyonu için Google Firebase kullanırız</p>
-                <p class="bullet">• Google ML Kit: OCR (fiş okuma) özelliği için kullanılır</p>
-                <p class="muted" style="margin-top:.6rem;">Bu servislerin kendi gizlilik politikaları vardır. Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
-            </section>
+        <h2>7. Çerezler</h2>
+        <p>Uygulamamız çerez kullanmaz. Ancak Firebase ve Google servisleri kendi çerezlerini kullanabilir. Bu çerezler, kimlik doğrulama ve oturum yönetimi için gereklidir.</p>
 
-            <section class="policy-section">
-                <h2>7. Çerezler</h2>
-                <p>Uygulamamız çerez kullanmaz. Ancak Firebase ve Google servisleri kendi çerezlerini kullanabilir. Bu çerezler, kimlik doğrulama ve oturum yönetimi için gereklidir.</p>
-            </section>
+        <h2>8. Politika Değişiklikleri</h2>
+        <p>Bu Gizlilik Politikası'nda yapılan değişiklikler uygulama içinde bildirilecektir. Önemli değişiklikler için kullanıcılarımıza bildirim gönderilecektir.</p>
 
-            <section class="policy-section">
-                <h2>8. Politika Değişiklikleri</h2>
-                <p>Bu Gizlilik Politikası'nda yapılan değişiklikler uygulama içinde bildirilecektir. Önemli değişiklikler için kullanıcılarımıza bildirim gönderilecektir.</p>
-            </section>
-
-            <section class="policy-section">
-                <h2>9. İletişim</h2>
-                <p>Gizlilik politikamız hakkında sorularınız varsa veya veri haklarınızı kullanmak istiyorsanız, lütfen uygulama içindeki geri bildirim özelliğini kullanarak bizimle iletişime geçin.</p>
-            </section>
-            
-        </div>
+        <h2>9. İletişim</h2>
+        <p>Gizlilik politikamız hakkında sorularınız varsa veya veri haklarınızı kullanmak istiyorsanız, lütfen uygulama içindeki geri bildirim özelliğini kullanarak bizimle iletişime geçin.</p>
+      </div>
     </main>
-    <script src="https://unpkg.com/ogl@0.0.105/dist/ogl.umd.js"></script>
-    <script src="assets/js/dark-veil.js"></script>
-    <script src="assets/js/darkmode-toggle.js"></script>
-</body>
-</html>
+  </body>
+  </html>
