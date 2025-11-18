@@ -1,10 +1,10 @@
 # Gizlilik Politikası
 Son Güncelleme: 18.11.2025
 
-1. Giriş
+## 1. Giriş
 • Araç Defterim uygulaması olarak, kullanıcılarımızın gizliliğini ve veri güvenliğini önemsiyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken topladığımız bilgileri, bu bilgileri nasıl kullandığımızı ve koruduğumuzu açıklar.
 
-2. Toplanan Veriler
+## 2. Toplanan Veriler
 • Uygulamamızı kullanırken aşağıdaki verileri topluyoruz:
 
 • Araç Bilgileri: Marka, model, yıl, plaka, VIN numarası, renk, kilometre bilgisi
@@ -17,7 +17,7 @@ Son Güncelleme: 18.11.2025
 
 • Cihaz Bilgileri: Cihaz modeli, işletim sistemi versiyonu (hata ayıklama için)
 
-3. Veri Kullanım Amaçları
+## 3. Veri Kullanım Amaçları
 Topladığımız verileri aşağıdaki amaçlar için kullanıyoruz:
 
 • Uygulama işlevselliğini sağlamak (araç takibi, bakım hatırlatmaları, yakıt analizi)
@@ -30,7 +30,7 @@ Topladığımız verileri aşağıdaki amaçlar için kullanıyoruz:
 
 • Yasal yükümlülükleri yerine getirmek
 
-4. Veri Saklama ve Güvenlik
+## 4. Veri Saklama ve Güvenlik
 Verileriniz aşağıdaki şekillerde saklanır:
 
 • Firebase Firestore: Bulut tabanlı veritabanında güvenli şekilde saklanır
@@ -45,7 +45,7 @@ Verileriniz aşağıdaki şekillerde saklanır:
 
 Hesabınızı sildiğinizde veya veri silme talebinde bulunduğunuzda, verileriniz güvenli bir şekilde kalıcı olarak silinir.
 
-5. Kullanıcı Hakları
+## 5. Kullanıcı Hakları
 KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:
 
 • Verilerinize Erişim: Toplanan tüm verilerinize erişebilirsiniz
@@ -60,7 +60,7 @@ KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:
 
 • İtiraz Hakkı: Veri işleme faaliyetlerimize itiraz edebilirsiniz
 
-6. Üçüncü Taraf Servisler
+## 6. Üçüncü Taraf Servisler
 Uygulamamız aşağıdaki üçüncü taraf servisleri kullanır:
 
 • Google Sign‑In: Kimlik doğrulama için Google hesabınızı kullanırız
@@ -71,13 +71,13 @@ Uygulamamız aşağıdaki üçüncü taraf servisleri kullanır:
 
 Google Gizlilik Politikası: policies.google.com/privacy
 
-7. Çerezler
+## 7. Çerezler
 Uygulamamız çerez kullanmaz. Ancak Firebase ve Google servisleri kendi çerezlerini kullanabilir. Bu çerezler, kimlik doğrulama ve oturum yönetimi için gereklidir.
 
-8. Politika Değişiklikleri
+## 8. Politika Değişiklikleri
 Bu Gizlilik Politikası'nda yapılan değişiklikler uygulama içinde bildirilecektir. Önemli değişiklikler için kullanıcılarımıza bildirim gönderilecektir.
 
-9. İletişim
+## 9. İletişim
 Gizlilik politikamız hakkında sorularınız varsa veya veri haklarınızı kullanmak istiyorsanız, lütfen uygulama içindeki geri bildirim özelliğini kullanarak bizimle iletişime geçin.
 Privacy Policy for Arac Defterim mobile application
 
