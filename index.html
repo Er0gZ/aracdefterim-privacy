@@ -8,22 +8,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#12110b" />
   <style>
-    body { margin:0; font-family: 'Inter', system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,sans-serif; line-height:1.7; color:#1d1c14; background:#ffffff; }
-    .container { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
-    h1 { margin:0 0 .5rem; font-size: 2rem; }
-    .last { color:#666; font-size:.95rem; margin-bottom:1rem; }
-    h2 { margin:1.6rem 0 .5rem; font-size:1.2rem; color:#6f5d0d; }
-    p { margin:.25rem 0; font-size:1.03rem; }
-    .bullet { margin:.3rem 0; }
-    a { color:#6f5d0d; text-decoration:none; }
-    a:hover { text-decoration:underline; }
+    :root {
+      --bg: #12110b;        /* App dark bg */
+      --bg-alt: #18170f;    /* App dark alt */
+      --bg-soft: #1f1e14;   /* App dark soft */
+      --text: #e7e2d5;      /* AppColors.darkTextPrimary */
+      --text-soft: #c8c7b7; /* AppColors.darkTextSecondary */
+      --accent: #dec56e;    /* AppColors.darkPrimary */
+      --border: #3a3826;    /* App border */
+    }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family: 'Inter', system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,sans-serif;
+      line-height:1.75;
+      font-size:17.5px;
+      color:var(--text);
+      background: radial-gradient(1100px 720px at 22% 0%, var(--bg-alt), var(--bg));
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 2.2rem 1.3rem 3.2rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+    }
+    h1 { margin:0; font-size: 2.15rem; letter-spacing:-0.2px; color:#f2eada; }
+    .divider { height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent); margin:1rem 0 1.2rem; }
+    .last { color:var(--text-soft); font-size:.95rem; margin:.2rem 0 1.2rem; }
+    h2 { margin:1.9rem 0 .65rem; font-size:1.28rem; color:var(--accent); letter-spacing:.2px; }
+    p { margin:.35rem 0; font-size:1.04rem; }
+    .bullet { margin:.35rem 0; color:#d9d5c9; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { filter:brightness(1.12); text-decoration:underline; }
+    ::selection { background: rgba(222,197,110,0.22); color:#fff; }
+    /* Back to top */
+    #toTop { position:fixed; bottom:16px; right:16px; width:44px; height:44px; border-radius:10px; display:none; place-items:center; background:#1b1d24; color:var(--accent); border:1px solid var(--border); box-shadow:0 6px 18px rgba(0,0,0,.35); cursor:pointer; }
+    #toTop.show { display:grid; }
+    #toTop:hover { background:#232630; }
   </style>
   </head>
   <body>
     <main>
       <div class="container">
         <h1>Gizlilik Politikası</h1>
+        <div class="divider"></div>
         <div class="last">Son Güncelleme: 18.11.2025</div>
 
         <h2>1. Giriş</h2>
@@ -52,7 +87,7 @@
         <p class="bullet">• Şifreleme: Hassas veriler şifrelenmiş olarak saklanır</p>
         <p class="bullet">• Güvenli Bağlantı: Tüm veri aktarımları HTTPS üzerinden yapılır</p>
         <p class="bullet">• Kullanıcı İzolasyonu: Her kullanıcının verileri birbirinden ayrı tutulur</p>
-        <p class="bullet" style="color:#666;">Hesabınızı sildiğinizde veya veri silme talebinde bulunduğunuzda, verileriniz güvenli bir şekilde kalıcı olarak silinir.</p>
+        <p class="bullet" style="color:var(--text-soft);">Hesabınızı sildiğinizde veya veri silme talebinde bulunduğunuzda, verileriniz güvenli bir şekilde kalıcı olarak silinir.</p>
 
         <h2>5. Kullanıcı Hakları</h2>
         <p>KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
@@ -68,7 +103,7 @@
         <p class="bullet">• Google Sign‑In: Kimlik doğrulama için Google hesabınızı kullanırız</p>
         <p class="bullet">• Firebase: Veri saklama, kimlik doğrulama ve bulut senkronizasyonu için Google Firebase kullanırız</p>
         <p class="bullet">• Google ML Kit: OCR (fiş okuma) özelliği için kullanılır</p>
-        <p class="bullet" style="color:#666;">Google Gizlilik Politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+        <p class="bullet" style="color:var(--text-soft);">Google Gizlilik Politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
 
         <h2>7. Çerezler</h2>
         <p>Uygulamamız çerez kullanmaz. Ancak Firebase ve Google servisleri kendi çerezlerini kullanabilir. Bu çerezler, kimlik doğrulama ve oturum yönetimi için gereklidir.</p>
@@ -78,7 +113,29 @@
 
         <h2>9. İletişim</h2>
         <p>Gizlilik politikamız hakkında sorularınız varsa veya veri haklarınızı kullanmak istiyorsanız, lütfen uygulama içindeki geri bildirim özelliğini kullanarak bizimle iletişime geçin.</p>
+      
+        <h1 style="margin-top:2.6rem;">Hesap ve Verilerin Silinmesi</h1>
+        <div class="divider"></div>
+        <p>Hesabınızı veya ilişkili tüm verileri dilediğiniz an uygulama içinden kalıcı olarak silebilirsiniz. Silme işlemleri, verilerinizin bulut (Firebase) ve cihazınızdaki (yerel veritabanı) kopyalarının tamamını kapsar.</p>
+        <p class="bullet">• <strong>Hesabı Sil</strong>: Ayarlar &gt; Hesabı Sil adımını izlediğinizde, kimlik doğrulaması bağlı hesabınız ve tüm ilişkili veriler sistemimizden kalıcı olarak silinir.</p>
+        <p class="bullet">• <strong>Veriyi Sil</strong>: Ayarlar &gt; Veriyi Sil adımı, hesabınızı koruyarak araçlar, bakım, yakıt ve diğer kayıtlarınızın tamamını kalıcı olarak siler.</p>
+        <p class="bullet">• <strong>Geri Alınamaz</strong>: Silme işlemleri geri alınamaz. İsterseniz işlem öncesi Profil &gt; PDF Raporu ile verilerinizi dışa aktarabilirsiniz.</p>
+        <p class="bullet">• <strong>Güvenlik ve Erişim</strong>: Verileriniz uygulama içinde şifrelenmiş olarak tutulur; yasal zorunluluklar dışında içeriğe erişim mümkün değildir. Bu nedenle, biz dahi verilerinize bakamayız.</p>
+        <p class="bullet">• <strong>Senkronizasyon</strong>: İnternet bağlantınız varsa silme işlemi anında buluta yansır; çevrimdışı durumdaysanız ilk senkronizasyonda uygulanır.</p>
       </div>
+      <button id="toTop" aria-label="Başa dön" title="Başa dön" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
     </main>
+    <script>
+      (function(){
+        const btn = document.getElementById('toTop');
+        function onScroll(){ btn.classList[window.scrollY > 240 ? 'add' : 'remove']('show'); }
+        window.addEventListener('scroll', onScroll, { passive:true });
+        onScroll();
+      })();
+    </script>
   </body>
   </html>
