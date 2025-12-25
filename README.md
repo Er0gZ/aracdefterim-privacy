@@ -1,5 +1,7 @@
 # Araç Defterim Politikaları
 
+**Son Güncelleme: 25.12.2025**
+
 ## Gizlilik Politikası
 
 ### 1. Giriş
@@ -8,43 +10,49 @@ Araç Defterim uygulaması olarak, kullanıcılarımızın gizliliğini ve veri 
 ### 2. Toplanan Veriler
 Uygulamamızı kullanırken aşağıdaki verileri topluyoruz:
 
-• Araç Bilgileri: Marka, model, yıl, plaka, VIN numarası, renk, kilometre bilgisi
+• **Araç Bilgileri**: Marka, model, yıl, plaka, VIN numarası (sadece saklanır, başka bir amaçla kullanılmaz), renk, kilometre bilgisi
 
-• Bakım Kayıtları: Bakım türü, tarih, kilometre, maliyet, fotoğraflar
+• **Bakım Kayıtları**: Bakım türü, tarih, kilometre, maliyet, fotoğraflar
 
-• Yakıt Kayıtları: Yakıt türü, litre, tutar, tarih, kilometre, verimlilik verileri
+• **Yakıt Kayıtları**: Yakıt türü, litre, tutar, tarih, kilometre, verimlilik verileri
 
-• Kullanıcı Bilgileri: Google hesabı bilgileri (e‑posta, isim, profil fotoğrafı)
+• **Kullanıcı Bilgileri**: Google hesabı bilgileri (e‑posta, isim, profil fotoğrafı)
 
-• Cihaz Bilgileri: Cihaz modeli, işletim sistemi versiyonu (hata ayıklama için)
+• **Bildirim Bilgileri**: Size bildirim gönderebilmek için gerekli teknik bilgiler
+
+• **Kullanım İstatistikleri**: Uygulamanın daha iyi çalışması için anonim kullanım verileri ve hata raporları
+
+• **Fiş Geri Bildirimi**: İsteğe bağlı olarak tanınmayan fiş fotoğrafları (sistem geliştirmesi için)
 
 ### 3. Veri Kullanım Amaçları
 Topladığımız verileri aşağıdaki amaçlar için kullanıyoruz:
 
 • Uygulama işlevselliğini sağlamak (araç takibi, bakım hatırlatmaları, yakıt analizi)
 
-• Kullanıcı deneyimini iyileştirmek
+• Size bildirim göndermek (bakım hatırlatmaları ve önemli bildirimler)
+
+• Uygulamayı iyileştirmek ve hataları düzeltmek
 
 • Verilerinizi cihazlarınız arasında senkronize etmek
 
-• Güvenlik ve hata ayıklama
+• Fiş okuma sistemini geliştirmek (gönderdiğiniz fiş fotoğrafları ile)
+
+• Güvenlik sağlamak
 
 • Yasal yükümlülükleri yerine getirmek
 
 ### 4. Veri Saklama ve Güvenlik
 Verileriniz aşağıdaki şekillerde saklanır:
 
-• Firebase Firestore: Bulut tabanlı veritabanında güvenli şekilde saklanır
+• **Bulut Depolama**: Verileriniz güvenli bulut sunucularında saklanır
 
-• SQLite: Cihazınızda offline erişim için yerel veritabanında saklanır
+• **Yerel Depolama**: Cihazınızda çevrimdışı erişim için yerel olarak saklanır
 
-• Şifreleme: Hassas veriler şifrelenmiş olarak saklanır
+• **Güvenlik**: Tüm veriler şifrelenmiş olarak saklanır ve güvenli bağlantı (HTTPS) kullanılır
 
-• Güvenli Bağlantı: Tüm veri aktarımları HTTPS üzerinden yapılır
+• **Veri Ayrımı**: Her kullanıcının verileri birbirinden ayrı tutulur
 
-• Kullanıcı İzolasyonu: Her kullanıcının verileri birbirinden ayrı tutulur
-
-• Veri Saklama Süresi: Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde veya 3 yıl boyunca aktif olmadığınızda verileriniz otomatik olarak silinir
+• **Veri Saklama Süresi**: Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde veya 3 yıl boyunca aktif olmadığınızda verileriniz otomatik olarak silinir
 
 Hesabınızı sildiğinizde veya veri silme talebinde bulunduğunuzda, verileriniz güvenli bir şekilde kalıcı olarak silinir.
 
@@ -54,28 +62,28 @@ Araç Defterim uygulaması 18 yaş ve üzeri kullanıcılar için tasarlanmışt
 ### 5. Kullanıcı Hakları
 KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:
 
-• Verilerinize Erişim: Toplanan tüm verilerinize erişebilirsiniz
+• **Verilerinize Erişim**: Toplanan tüm verilerinize erişebilirsiniz
 
-• Veri Düzeltme: Yanlış veya eksik verileri düzeltebilirsiniz
+• **Veri Düzeltme**: Yanlış veya eksik verileri düzeltebilirsiniz
 
-• Veri Silme: Tüm verilerinizi silebilirsiniz (Profil > Verileri Sil)
+• **Veri Silme**: Tüm verilerinizi silebilirsiniz (Profil > Verileri Sil)
 
-• Hesap Silme: Hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz (Profil > Hesabı Sil)
+• **Hesap Silme**: Hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz (Profil > Hesabı Sil)
 
-• Veri Taşınabilirliği: PDF raporu olarak verilerinizi dışa aktarabilirsiniz (Profil > PDF Raporu)
+• **Veri Taşınabilirliği**: PDF raporu olarak verilerinizi dışa aktarabilirsiniz (Profil > PDF Raporu)
 
-• İtiraz Hakkı: Veri işleme faaliyetlerimize itiraz edebilirsiniz
+• **İtiraz Hakkı**: Veri işleme faaliyetlerimize itiraz edebilirsiniz
 
 ### 6. Üçüncü Taraf Servisler
 Uygulamamız aşağıdaki üçüncü taraf servisleri kullanır:
 
-• Google Sign‑In: Kimlik doğrulama için Google hesabınızı kullanırız
+• **Google**: Kimlik doğrulama ve hesap yönetimi için
 
-• Firebase: Veri saklama, kimlik doğrulama ve bulut senkronizasyonu için Google Firebase kullanırız
+• **Firebase (Google)**: Veri saklama, bulut senkronizasyonu, bildirim gönderimi ve uygulama analitiği için
 
-• Google ML Kit: OCR (fiş okuma) özelliği için kullanılır
+• **Google ML Kit**: Fiş okuma (OCR) özelliği için
 
-Google Gizlilik Politikası: policies.google.com/privacy
+**Google Gizlilik Politikası**: [policies.google.com/privacy](https://policies.google.com/privacy)
 
 #### 6.1. Premium Özellikler
 Uygulamamız şu anda ücretsizdir. Gelecekte premium abonelik planları eklenebilir. Premium özellikler şunları içerebilir:
@@ -105,7 +113,23 @@ Gizlilik politikamız hakkında sorularınız varsa veya veri haklarınızı kul
 Araç Defterim uygulamasını kullanarak bu Kullanım Koşulları'nı kabul etmiş olursunuz. Uygulamayı kullanmaya başlamadan önce bu koşulları okumanız önerilir.
 
 ### 2. Hizmet Tanımı
-Uygulama, araç bilgileri yönetimi, bakım kayıtları, yakıt analizi, maliyet raporları, OCR ile fiş okuma, çevrimdışı kullanım ve çoklu cihaz senkronizasyonu gibi özellikler sunar.
+Araç Defterim, araç sahiplerinin araçlarını yönetmelerine, bakım kayıtlarını tutmalarına, yakıt tüketimini takip etmelerine ve araçla ilgili giderleri analiz etmelerine olanak sağlayan bir mobil uygulamadır. Uygulama şu özellikleri sunar:
+
+• Araç bilgileri yönetimi
+
+• Bakım kayıtları ve hatırlatmaları
+
+• Push notification ile bakım hatırlatmaları
+
+• Yakıt tüketimi takibi ve analizi
+
+• Maliyet analizi ve raporlama
+
+• OCR ile fiş okuma ve geri bildirim sistemi
+
+• Offline çalışma desteği
+
+• Çoklu cihaz senkronizasyonu
 
 ### 3. Kullanıcı Sorumlulukları
 Kullanıcılar doğru bilgi sağlamak, hesap güvenliğini korumak, uygulamayı yalnızca yasal amaçlar için kullanmak ve üçüncü taraf servislerin (Google, Firebase) şartlarına uymakla yükümlüdür.
@@ -145,19 +169,21 @@ Koşullarda yapılacak değişiklikler uygulama içi bildirimle duyurulur. Uygul
 Kullanım koşullarıyla ilgili sorularınız için uygulama içindeki geri bildirim özelliğini kullanabilirsiniz.
 
 ## Hesap ve Verilerin Silinmesi
-• Hesabınızı veya ilişkili tüm verileri dilediğiniz an uygulama içinden kalıcı olarak silebilirsiniz. Silme işlemleri, verilerinizin bulut (Firebase) ve cihazınızdaki (yerel veritabanı) kopyalarının tamamını kapsar.
+
+Hesabınızı veya ilişkili tüm verileri dilediğiniz an uygulama içinden kalıcı olarak silebilirsiniz. Silme işlemleri, verilerinizin bulut (Firebase) ve cihazınızdaki (yerel veritabanı) kopyalarının tamamını kapsar.
 
 ### Hesabı Sil
-• Hesabı Sil: Ayarlar > Hesabı Sil adımı, hesabınızı ve bağlı tüm verileri kalıcı olarak kaldırır.
+**Hesabı Sil**: Ayarlar > Hesabı Sil adımı, hesabınızı ve bağlı tüm verileri kalıcı olarak kaldırır.
 
 ### Veriyi Sil
-• Veriyi Sil: Ayarlar > Veriyi Sil adımı, hesabınızı koruyarak araçlar, bakım, yakıt ve diğer kayıtlarınızı kalıcı olarak siler.
+**Veriyi Sil**: Ayarlar > Veriyi Sil adımı, hesabınızı koruyarak araçlar, bakım, yakıt ve diğer kayıtlarınızı kalıcı olarak siler.
 
 ### Geri Alınamaz
-• Geri Alınamaz: Silme işlemleri geri alınamaz. İşlem öncesinde Profil > PDF Raporu ile verilerinizi dışa aktarabilirsiniz.
+**Geri Alınamaz**: Silme işlemleri geri alınamaz. İşlem öncesinde Profil > PDF Raporu ile verilerinizi dışa aktarabilirsiniz.
 
 ### Güvenlik ve Erişim
-• Güvenlik ve Erişim: Verileriniz şifrelenmiş şekilde saklanır; yasal zorunluluklar dışında erişim mümkün değildir.
+**Güvenlik ve Erişim**: Verileriniz şifrelenmiş şekilde saklanır; yasal zorunluluklar dışında erişim mümkün değildir.
 
 ### Senkronizasyon
-• Senkronizasyon: İnternet bağlantınız varsa silme işlemi anında buluta yansır; çevrimdışı durumdaysanız ilk senkronizasyonda uygulanır.
+**Senkronizasyon**: İnternet bağlantınız varsa silme işlemi anında buluta yansır; çevrimdışı durumdaysanız ilk senkronizasyonda uygulanır.
+
